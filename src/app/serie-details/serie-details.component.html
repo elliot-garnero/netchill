@@ -31,22 +31,54 @@
     <br />
     <div class="grid-table">
       <div class="grid-table-row">
-        <div class="grid-table-cell">Title</div>
-        <div class="grid-table-cell">Season</div>
-        <div class="grid-table-cell">Episode</div>
-        <div class="grid-table-cell">Air Date</div>
+        <div class="grid-table-cell grid-header">Title</div>
+        <div class="grid-table-cell grid-header">Season</div>
+        <div class="grid-table-cell grid-header">Episode</div>
+        <div class="grid-table-cell grid-header">Air Date</div>
       </div>
       <div class="grid-table-row" *ngFor="let episode of episodes">
-        <div class="grid-table-cell" data-title="Title">
+        <div
+          class="grid-table-cell"
+          data-title="Title"
+          [ngStyle]="
+            episode.user.seen == false
+              ? { backgroundColor: '#292b2c' }
+              : { backgroundColor: '#d9534f' }
+          "
+        >
           {{ episode.title }}
         </div>
-        <div class="grid-table-cell" data-title="Number">
+        <div
+          class="grid-table-cell"
+          data-title="Number"
+          [ngStyle]="
+            episode.user.seen == false
+              ? { backgroundColor: '#292b2c' }
+              : { backgroundColor: '#d9534f' }
+          "
+        >
           {{ episode.season }}
         </div>
-        <div class="grid-table-cell" data-title="Series">
+        <div
+          class="grid-table-cell"
+          data-title="Series"
+          [ngStyle]="
+            episode.user.seen == false
+              ? { backgroundColor: '#292b2c' }
+              : { backgroundColor: '#d9534f' }
+          "
+        >
           {{ episode.episode }}
         </div>
-        <div class="grid-table-cell" data-title="Air Date">
+        <div
+          class="grid-table-cell"
+          data-title="Air Date"
+          [ngStyle]="
+            episode.user.seen == false
+              ? { backgroundColor: '#292b2c' }
+              : { backgroundColor: '#d9534f' }
+          "
+        >
           {{ episode.date }}
         </div>
       </div>

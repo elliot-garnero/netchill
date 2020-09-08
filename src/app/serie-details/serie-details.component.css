@@ -301,7 +301,6 @@ h2 {
 
 .grid-table-row:hover {
   background-color: #d9534f;
-  color: white;
 }
 
 .grid-table-row {
@@ -319,8 +318,14 @@ h2 {
   font-weight: bold;
   text-shadow: 0 2px 1px #fff;
 }
+
 .grid-table-cell {
   padding: 1rem;
+  color: white;
+}
+
+.grid-header {
+  color: #000;
 }
 
 .grid-table-cell:not(:last-child) {
