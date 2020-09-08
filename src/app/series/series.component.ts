@@ -14,12 +14,18 @@ export class SeriesComponent implements OnInit {
     this.getSeries();
   }
 
+  // Pas de note pour la serie
+
   getSeries() {
     this.httpClient
-      .get<any>('https://api.betaseries.com/shows/list?key=38f654e19c78 ')
+      .get<any>('https://api.betaseries.com/shows/list?key=38f654e19c78')
       .subscribe((response) => {
         console.log(response.shows);
         this.series = response.shows;
       });
+  }
+
+  getGenre(genre) {
+    return genre[Object.keys(genre)[0]];
   }
 }

@@ -1,0 +1,55 @@
+<div class="movie-card">
+  <div class="container flexPerso">
+    <a href="#"
+      ><img
+        src="{{ serie.images.poster }}"
+        height="500"
+        height="250"
+        alt="cover"
+        class="cover"
+    /></a>
+    <div class="hero">
+      <img src="{{ serie.images.show }}" alt="show" />
+    </div>
+    <div class="description">
+      <div class="column1">
+        <p class="note">Rating : {{ getRating(serie.notes) }} / 5</p>
+        <span class="tag">{{ getGenre(serie.genres) }}</span>
+      </div>
+      <div class="column2">
+        <div>
+          <div>
+            {{ serie.title }} - <i>{{ serie.creation }}</i>
+          </div>
+          <br />
+        </div>
+        <p>
+          {{ serie.description }}
+        </p>
+      </div>
+    </div>
+    <br />
+    <div class="grid-table">
+      <div class="grid-table-row">
+        <div class="grid-table-cell">Title</div>
+        <div class="grid-table-cell">Season</div>
+        <div class="grid-table-cell">Episode</div>
+        <div class="grid-table-cell">Air Date</div>
+      </div>
+      <div class="grid-table-row" *ngFor="let episode of episodes">
+        <div class="grid-table-cell" data-title="Title">
+          {{ episode.title }}
+        </div>
+        <div class="grid-table-cell" data-title="Number">
+          {{ episode.season }}
+        </div>
+        <div class="grid-table-cell" data-title="Series">
+          {{ episode.episode }}
+        </div>
+        <div class="grid-table-cell" data-title="Air Date">
+          {{ episode.date }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
