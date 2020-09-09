@@ -1,0 +1,69 @@
+img {
+  width: 100%;
+}
+/* Header */
+.logoheader {
+  width: 10%;
+}
+.containerheader {
+  display: flex;
+  flex-direction: row;
+}
+.container__navbar {
+  margin: auto;
+  font-size: x-large;
+  margin-top: 3%;
+  margin-left: 25%;
+  border: #79011b 2px solid;
+  background-color: #79011b;
+  border-radius: 8px;
+}
+.container__search {
+  margin: auto;
+}
+.btn-outline-success {
+  color: #79011b;
+  border: #79011b 2px solid;
+  font-weight: bold;
+  font-size: x-large;
+}
+.btn-outline-success:hover {
+  background-color: #ce028a;
+}
+.nav-link {
+  color: white;
+}
+.form-control {
+  font-size: x-large;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-weight: bold;
+}
+.form-group {
+  padding: 2%;
+}
+.card {
+  text-align: center;
+  background-color: #79011b;
+  color: white;
+  border-radius: 8px;
+  width: 48%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2%;
+  margin-top: 5%;
+  font-size: 1.5em;
+}
+.btn-submit {
+  background-color: #79011b;
+  color: white;
+  border-radius: 8px;
+  padding: 2%;
+  border: 1px white solid;
+  font-weight: bold;
+  font-size: 1em;
+}
+.btn-submit:hover {
+  background-color: white;
+  color: #ce028a;
+}
