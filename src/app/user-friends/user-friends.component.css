@@ -1,0 +1,100 @@
+img {
+  width: 100%;
+}
+/* Header */
+.logoheader {
+  width: 10%;
+}
+.containerheader {
+  display: flex;
+  flex-direction: row;
+}
+.container__navbar {
+  margin: auto;
+  font-size: x-large;
+  margin-top: 3%;
+  margin-left: 25%;
+  border: #79011b 2px solid;
+  background-color: #79011b;
+  border-radius: 8px;
+}
+.container__search {
+  margin: auto;
+}
+.btn-outline-success {
+  color: #dc3545;
+  border: #dc3545 2px solid;
+  font-weight: bold;
+  font-size: x-large;
+}
+.btn-outline-success:hover {
+  background-color: red;
+}
+.nav-link {
+  color: white;
+}
+.container {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.card h2 {
+  padding: 2%;
+  font-weight: bold;
+}
+.card {
+  text-align: center;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 8px;
+  width: 40%;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1em;
+  padding: 1%;
+  font-weight: bold;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.card-link {
+  background: none;
+  text-align: center;
+  border: none;
+  color: #dc3545;
+}
+.card-link p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card p {
+  text-align: left;
+  padding-bottom: 1%;
+}
+.card button {
+  background: none;
+  border: none;
+  width: 10%;
+}
+.card button:hover {
+  background: none;
+  border: none;
+}
+.card .list {
+  border-bottom: 1px solid #79011b;
+}
+.card .list:last-child {
+  border-bottom: none;
+}
+.addfriends {
+  font-weight: bold;
+  font-size: x-large;
+  text-decoration: none;
+  color: #ce028a;
+}
+.addfriends:hover {
+  color: #eb6ac0;
+}
+.link-addfriends {
+  font-weight: bolder;
+  font-size: x-large;
+}

@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="card card-link">
+      <p class="link-addfriends">Find your friend <a class="addfriends" href="/members">here</a> !</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="card">
+      <h2>Friends</h2><br><br>
+
+      <p *ngFor="let users of arrayData" class="list">
+        <button (click)="removeFriend($event.target.name)" name={{users.id}}>
+          <img src="https://img.icons8.com/plasticine/100/000000/filled-trash.png" alt='icon remove' title="remove" name={{users.id}} />
+        </button>
+
+        {{users.login}}
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Blocked</h2><br><br>
+
+      <p *ngFor="let users of arrayBlocked" class="list">
+        <button (click)="deblockFriend($event.target.name)" name={{users.id}}>
+          <img src="https://img.icons8.com/plasticine/100/000000/filled-trash.png" alt='icon suppression' title="remove" name={{users.id}} />
+        </button>
+
+        {{users.login}}
+      </p>
+    </div>
+  </div>
+</div>

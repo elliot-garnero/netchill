@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
         localStorage.setItem("connect", user);
         localStorage.setItem("id", id);
         alert('Welcome ' + login + " !");
-        window.location.href = '/series';
+        window.location.href = '/informations';
       },
       (error) => {
         alert('Login or password incorrect !');

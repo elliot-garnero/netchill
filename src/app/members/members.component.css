@@ -1,0 +1,112 @@
+img {
+  width: 100%;
+}
+/* Header */
+.logoheader {
+  width: 10%;
+}
+.containerheader {
+  display: flex;
+  flex-direction: row;
+}
+.container__navbar {
+  margin: auto;
+  font-size: x-large;
+  margin-top: 3%;
+  margin-left: 25%;
+  border: #79011b 2px solid;
+  background-color: #79011b;
+  border-radius: 8px;
+}
+.container__search {
+  margin: auto;
+}
+.btn-outline-success {
+  color: #79011b;
+  border: #79011b 2px solid;
+  font-weight: bold;
+  font-size: x-large;
+}
+.btn-outline-success:hover {
+  background-color: #ce028a;
+}
+.nav-link {
+  color: white;
+}
+.form-control {
+  font-size: x-large;
+}
+.input_search {
+  height: 4em;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  color: #79011b;
+  border: 6px solid #79011b;
+  border-style: double;
+  border-radius: 4em;
+  background-color: white;
+  font-weight: bold;
+}
+.card {
+  text-align: center;
+  color: #79011b;
+  border-radius: 8px;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1em;
+  padding: 1%;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+.card-link {
+  background: none;
+  text-align: center;
+  border: none;
+  color: #79011b;
+}
+.card-link p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card p {
+  text-align: left;
+  padding-bottom: 1%;
+}
+.card-link {
+  background: none;
+  text-align: center;
+  border: none;
+  color: #79011b;
+}
+.card-link p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card button {
+  background: none;
+  border: none;
+  width: 5%;
+}
+.card button:hover {
+  background: none;
+  border: none;
+}
+.card .list-members {
+  border-bottom: 1px solid #7c3c54 bd;
+}
+.card .list-members:last-child {
+  border-bottom: none;
+}
+.addfriends {
+  font-weight: bold;
+  font-size: large;
+  text-decoration: none;
+  color: #ce028a;
+}
+.addfriends:hover {
+  color: #eb6ac0;
+}
