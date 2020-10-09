@@ -1,14 +1,15 @@
-img {
-  width: 100%;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+  font-family: 'Open Sans', sans-serif;
 }
-/* Header */
-.logoheader {
-  width: 10%;
+
+.login {
+  width: 400px;
+  margin: 16px auto;
+  font-size: 16px;
 }
-.containerheader {
-  display: flex;
-  flex-direction: row;
-}
+<<<<<<< HEAD
 .container__navbar {
   margin: auto;
   font-size: x-large;
@@ -17,31 +18,69 @@ img {
   border: #d9534f 2px solid;
   background-color: #d9534f;
   border-radius: 8px;
+=======
+
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+>>>>>>> aef8321c69a9e3471adae871390eeff2cf8431d4
 }
-.container__search {
-  margin: auto;
+
+.login-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color: #dc3545;
 }
+<<<<<<< HEAD
 .btn-outline-success {
   color: #d9534f;
   border: #d9534f 2px solid;
   font-weight: bold;
   font-size: x-large;
+=======
+
+.login-header {
+  background: #dc3545;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+>>>>>>> aef8321c69a9e3471adae871390eeff2cf8431d4
 }
-.btn-outline-success:hover {
-  background-color: #ce028a;
+
+.login-container {
+  background: #ebebeb;
+  padding: 12px;
 }
-.nav-link {
-  color: white;
+
+.login p {
+  padding: 12px;
 }
-.form-control {
-  font-size: x-large;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  font-weight: bold;
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
 }
-.form-group {
-  padding: 2%;
+
+.login input[type="text"],
+.login input[type="password"] {
+  background: #fff;
+  border-color: #dc3545;
+  color: #555;
 }
+<<<<<<< HEAD
 .card {
   text-align: center;
   background-color: #d9534f;
@@ -62,8 +101,25 @@ img {
   border: 1px white solid;
   font-weight: bold;
   font-size: 1em;
+=======
+
+.login input[type="text"]:focus,
+.login input[type="password"]:focus {
+  border-color: #dc3545;
 }
-.btn-submit:hover {
-  background-color: white;
-  color: #ce028a;
+
+.login input[type="submit"] {
+  background: #dc3545;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+>>>>>>> aef8321c69a9e3471adae871390eeff2cf8431d4
+}
+
+.login input[type="submit"]:hover {
+  background: red;
+}
+
+.login input[type="submit"]:focus {
+  border-color: #05a;
 }

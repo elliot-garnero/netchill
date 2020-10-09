@@ -1,19 +1,9 @@
-<div class="container">
-  <div class="row">
-    <div class="card">
-      <form #form="ngForm" (ngSubmit)="login(form)">
-        <div class="form-group">
-          <label for="user">Email or username : </label><br>
-          <input type="text" id="user" name="user" class="form-control" ngModel required />
-
-          <label for="password">Password : </label><br>
-          <input type="password" id="password" name="password" class="form-control" ngModel required /><br>
-
-          <input type="submit" class="btn-submit" value="Sign in" />
-        </div>
-      </form>
-    </div>
-  </div>
+<div class="login">
+  <div class="login-triangle"></div>
+  <h2 class="login-header">Log in</h2>
+  <form class="login-container" #form="ngForm" (ngSubmit)="login(form)">
+    <p><input type="text" placeholder="Username" id="user" name="user" ngModel required></p>
+    <p><input type="password" placeholder="Password" id="password" name="password" ngModel required></p>
+    <p><input type="submit" value="Login"></p>
+  </form>
 </div>
-<br />
-<br />

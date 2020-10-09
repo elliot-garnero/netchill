@@ -1,0 +1,72 @@
+img {
+  width: 100%;
+}
+/* Header */
+.logoheader {
+  width: 10%;
+}
+.containerheader {
+  display: flex;
+  flex-direction: row;
+}
+.container__navbar {
+  margin: auto;
+  font-size: x-large;
+  margin-top: 3%;
+  margin-left: 25%;
+  border: #79011b 2px solid;
+  background-color: #79011b;
+  border-radius: 8px;
+}
+.container__search {
+  margin: auto;
+}
+.btn-outline-success:hover {
+  background-color: #dc3545;
+}
+.nav-link {
+  color: white;
+}
+.container {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.card {
+  text-align: center;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 8px;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1em;
+  padding: 1%;
+  font-weight: bold;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+img {
+  width: 100%;
+}
+.avatar {
+  width: 30%;
+  margin: 2%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+input[type="submit"] {
+  background: #dc3545;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: white;
+  color: red;
+}
+
+input[type="submit"]:focus {
+  border-color: #05a;
+}

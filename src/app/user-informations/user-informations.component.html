@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="card">
+      <h2 *ngFor="let login of arrayUser">Welcome {{login}}</h2><br><br>
+      <p class="avatar" *ngFor="let avatar of arrayAvatar"><img src="{{avatar}}" alt="avatar" /></p>
+      <hr>
+      <p *ngFor="let login of arrayUser">USERNAME : {{login}}</p>
+      <hr>
+      <p *ngFor="let email of arrayEmail">EMAIL : {{email}}</p>
+      <br />
+      <p><input type="submit" value="Logout" (click)="ngOnClick()"></p>
+    </div>
+  </div>
+</div>

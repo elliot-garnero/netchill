@@ -23,6 +23,7 @@ export class LoginComponent implements OnInit {
       password: password,
     };
 
+<<<<<<< HEAD
     this.http
       .post(
         'https://api.betaseries.com/members/auth?key=38f654e19c78',
@@ -42,6 +43,28 @@ export class LoginComponent implements OnInit {
           alert('Login or password incorrect !');
         }
       );
+=======
+    this.http.post("https://api.betaseries.com/members/auth?key=38f654e19c78", this.parametres ).subscribe(
+      (data) => {
+        let user = data['token'];
+        let id = data['user'].id;
+        let login = data['user']['login'];
+        console.log(id);
+        console.log(login);
+        console.log(user);
+        localStorage.setItem("connect", user);
+        localStorage.setItem("id", id);
+        alert('Welcome ' + login + " !");
+        window.location.href = '/informations';
+      },
+      (error) => {
+        alert('Login or password incorrect !');
+      }
+    )}
+
+  ngOnInit(): void {
+    
+>>>>>>> aef8321c69a9e3471adae871390eeff2cf8431d4
   }
 
   ngOnInit(): void {}
