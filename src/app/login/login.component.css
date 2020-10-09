@@ -14,16 +14,16 @@ img {
   font-size: x-large;
   margin-top: 3%;
   margin-left: 25%;
-  border: #79011b 2px solid;
-  background-color: #79011b;
+  border: #d9534f 2px solid;
+  background-color: #d9534f;
   border-radius: 8px;
 }
 .container__search {
   margin: auto;
 }
 .btn-outline-success {
-  color: #79011b;
-  border: #79011b 2px solid;
+  color: #d9534f;
+  border: #d9534f 2px solid;
   font-weight: bold;
   font-size: x-large;
 }
@@ -44,7 +44,7 @@ img {
 }
 .card {
   text-align: center;
-  background-color: #79011b;
+  background-color: #d9534f;
   color: white;
   border-radius: 8px;
   width: 48%;
@@ -55,7 +55,7 @@ img {
   font-size: 1.5em;
 }
 .btn-submit {
-  background-color: #79011b;
+  background-color: #d9534f;
   color: white;
   border-radius: 8px;
   padding: 2%;

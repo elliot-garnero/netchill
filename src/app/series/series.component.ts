@@ -14,18 +14,43 @@ export class SeriesComponent implements OnInit {
     this.getSeries();
   }
 
-  // Pas de note pour la serie
-
   getSeries() {
+    let token = localStorage.getItem('connect');
     this.httpClient
-      .get<any>('https://api.betaseries.com/shows/list?key=38f654e19c78')
+      .get<any>(
+        'https://api.betaseries.com/shows/member?key=38f654e19c78&token=' +
+          token + '&id=1'
+      )
       .subscribe((response) => {
         console.log(response.shows);
         this.series = response.shows;
       });
   }
 
+  // getSeries() {
+  //   this.httpClient
+  //     .get<any>('https://api.betaseries.com/shows/list?key=38f654e19c78')
+  //     .subscribe((response) => {
+  //       console.log(response.shows);
+  //       this.series = response.shows;
+  //     });
+  // }
+
   getGenre(genre) {
     return genre[Object.keys(genre)[0]];
+  }
+
+  saveSerie(e, serie){
+    e.preventDefault();
+    let token = localStorage.getItem('connect');
+    this.httpClient
+      .post(
+        'https://api.betaseries.com/shows/favorite?key=38f654e19c78&token=' + token + '&id=' +
+          serie.id,
+          {}
+      )
+      .subscribe((response) => {
+        console.log(response);
+      });
   }
 }

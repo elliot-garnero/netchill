@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { SeriesComponent } from './series/series.component';
 import { SerieDetailsComponent } from './serie-details/serie-details.component';
 import { LoginComponent } from './login/login.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SeriesComponent,
     LoginComponent,
-    SerieDetailsComponent
+    SerieDetailsComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,

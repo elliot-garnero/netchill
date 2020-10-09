@@ -13,7 +13,7 @@
     </div>
     <div class="description">
       <div class="column1">
-        <p class="note">Rating : {{ getRating(serie.notes) }} / 5</p>
+        <p class="note">Rating : {{ getRating(serie.notes) | number : '1.2-2' }} / 5</p>
         <span class="tag">{{ getGenre(serie.genres) }}</span>
       </div>
       <div class="column2">
@@ -29,57 +29,69 @@
       </div>
     </div>
     <br />
-    <div class="grid-table">
-      <div class="grid-table-row">
-        <div class="grid-table-cell grid-header">Title</div>
-        <div class="grid-table-cell grid-header">Season</div>
-        <div class="grid-table-cell grid-header">Episode</div>
-        <div class="grid-table-cell grid-header">Air Date</div>
-      </div>
-      <div class="grid-table-row" *ngFor="let episode of episodes">
-        <div
-          class="grid-table-cell"
-          data-title="Title"
-          [ngStyle]="
-            episode.user.seen == false
-              ? { backgroundColor: '#292b2c' }
-              : { backgroundColor: '#d9534f' }
-          "
-        >
-          {{ episode.title }}
+    <div class="mb-3" *ngFor="let episode of episodes">
+      <div class="grid-table">
+        <div class="grid-table-row">
+          <div class="grid-table-cell grid-header">Title</div>
+          <div class="grid-table-cell grid-header">Season</div>
+          <div class="grid-table-cell grid-header">Episode</div>
+          <div class="grid-table-cell grid-header">Details</div>
         </div>
-        <div
-          class="grid-table-cell"
-          data-title="Number"
-          [ngStyle]="
-            episode.user.seen == false
-              ? { backgroundColor: '#292b2c' }
-              : { backgroundColor: '#d9534f' }
-          "
-        >
-          {{ episode.season }}
+        <div class="grid-table-row" (click)="viewedEpisode(episode)">
+          <div
+            class="grid-table-cell"
+            data-title="Title"
+            [ngStyle]="
+              episode.user.seen == false
+                ? { backgroundColor: '#292b2c' }
+                : { backgroundColor: '#d9534f' }
+            "
+          >
+            {{ episode.title }}
+          </div>
+          <div
+            class="grid-table-cell"
+            data-title="Number"
+            [ngStyle]="
+              episode.user.seen == false
+                ? { backgroundColor: '#292b2c' }
+                : { backgroundColor: '#d9534f' }
+            "
+          >
+            {{ episode.season }}
+          </div>
+          <div
+            class="grid-table-cell"
+            data-title="Series"
+            [ngStyle]="
+              episode.user.seen == false
+                ? { backgroundColor: '#292b2c' }
+                : { backgroundColor: '#d9534f' }
+            "
+          >
+            {{ episode.episode }}
+          </div>
+          <div
+            class="grid-table-cell"
+            data-title="Details"
+            [ngStyle]="
+              episode.user.seen == false
+                ? { backgroundColor: '#292b2c' }
+                : { backgroundColor: '#d9534f' }
+            "
+          >
+            {{ episode.date }}
+          </div>
         </div>
-        <div
-          class="grid-table-cell"
-          data-title="Series"
-          [ngStyle]="
-            episode.user.seen == false
-              ? { backgroundColor: '#292b2c' }
-              : { backgroundColor: '#d9534f' }
-          "
-        >
-          {{ episode.episode }}
-        </div>
-        <div
-          class="grid-table-cell"
-          data-title="Air Date"
-          [ngStyle]="
-            episode.user.seen == false
-              ? { backgroundColor: '#292b2c' }
-              : { backgroundColor: '#d9534f' }
-          "
-        >
-          {{ episode.date }}
+        <div class="m-3">
+          <h4 class="text-danger">{{ episode.note.mean.toFixed(2) }} / 5</h4>
+          <p>{{ episode.description }}</p>
+          <button
+            class="btn btn-dark float-right"
+            (click)="commentEpisode(episode)"
+          >
+            Comment
+          </button>
         </div>
       </div>
     </div>
